@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        Demonstration of JavaScript<br>
+        <script>
+            let x,y;
+             x=5;
+             y=20;
+            console.log("value in variable x is "+x);
+            console.log("value in variable y is "+y);
+            document.writeln("value in variable x is "+x);
+            document.write("<br>");
+            const z=12;
+            document.writeln("value of z is "+z);
+            //array
+            let listOfNumbers=[2,3,4,5,6,7];
+            document.write("<br>");
+            document.write(listOfNumbers);
+            document.write("<br>Value at index 2 is 4"+listOfNumbers[2]);
+            document.write("<br>"+listOfNumbers[2-1]);    //output=3
+
+            let mixedArray=[1,2,"adam",5.6];
+            document.write("<br> Values in mixed array are "+mixedArray);
+            document.write("<br>Length of array is "+mixedArray.length);
+            mixedArray[3]="CSTS";
+            document.write("<br>Lenght of array is"+mixedArray.length);
+
+            //functions supported by array
+            document.write("<br>Sorted array is"+mixedArray.sort())
+
+            //the pop() method removes the last 
+            document.write("<br>Array of elements are"+mixedArray);
+            let value1=mixedArray.pop();
+            document.write("<br> Popped element is "+value1); 
+
+            //the push() method adds a new element at the end of array
+            mixedArray.push("kiwi");
+            document.write("<br> Updated array after inspection is"+mixedArray);
+
+            //the shift method removes first array element and shifts all the elements to the lower index
+            mixedArray.shift();
+            document.write("<br>Array after shift operation is "+mixedArray);
+             
+            //the unshift() method adds a new element at the begining and shifts other elements
+            mixedArray.unshift("orange");
+            document.write("<br>Updated array is "+mixedArray);
+
+            let fruits=["apple","banana","orange"]
+            //fruits.splice(1);
+            //fruits.splice(1,1);
+            //fruits.splice(1,1,"Kiwi","straberry");
+            document.write("<br>Updated array is "+fruits)
+            fruits.splice(1,2,"Pomegranate","Guava","Guava")
+            document.write("<br> Updated array is "+fruits);
+
+
+             </script>
+    </body>
+</html>
